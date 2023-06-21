@@ -13,7 +13,7 @@ function Login() {
                         <TextField id="senha" label='senha' variant='outlined' name="senha" margin="normal" type="password" fullWidth />
                         <Box marginTop={2} textAlign='center'>
                             <Link to='/home' className='text-decorator-none'>
-                                <Button type='submit' variant='contained' color='primary' style={{backgroundColor:'#57cc99f'}}>
+                                <Button type='submit' variant='contained' style={{ borderColor: "lightgrey", backgroundColor: "#22577a", color: "lightgrey" }}>
                                     Logar
                                 </Button>
                             </Link>
@@ -23,7 +23,9 @@ function Login() {
                         <Box marginRight={1}>
                             <Typography variant='subtitle1' gutterBottom align="center">Não tem uma conta?</Typography>
                         </Box>
+                        <Link to="/cadastroUsuario">
                         <Typography variant='subtitle1' gutterBottom align="center" className="textos">Cadastre-se</Typography>
+                        </Link>
                     </Box>
                 </Box>
             </Grid>

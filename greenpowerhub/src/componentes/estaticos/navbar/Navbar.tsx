@@ -5,12 +5,12 @@ function Navbar() {
     return (
         <>
 
-            <AppBar position="static" style={{ backgroundColor: '#22577aff' }}>
+            <AppBar position="static" style={{ backgroundColor: '#38a3a5ff' }}>
                 <Toolbar variant="dense" >
                     <Box display="flex" justifyContent= "flex-end">
                         <Box className='cursor' >
                             <Typography variant="h5" color="inherit">
-                                Green Power hub
+                                GreenPowerHub
                             </Typography>
                         </Box>
 

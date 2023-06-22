@@ -16,7 +16,7 @@ function App() {
   return (
     <BrowserRouter>
       <Navbar />
-        <div style={{ minHeight: '70vh' }}>
+        <div style={{ minHeight: '100vh' }}>
         <Routes> // Antigo Switch
           <Route path="/" element={<Login />} />
           <Route path="/login" element={<Login />} />

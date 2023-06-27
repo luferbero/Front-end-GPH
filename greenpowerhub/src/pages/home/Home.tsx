@@ -1,52 +1,16 @@
 import './Home.css';
 import { Box, Button, Grid, Typography } from "@mui/material";
-import AliceCarousel from 'react-alice-carousel';
-import 'react-alice-carousel/lib/alice-carousel.css';
+import Carousel from '../../componentes/carousel/Carousel';
 
 function Home() {
-
-    const items = [
-
-        <div className="item" data-value="1" >
-            <img src="./images/energia biomassa.jpg" width={1490} height={500} />
-        </div>,
-        <div className="item" data-value="1" >
-            <img src="./images/energia hidraulica.png" width={1490} height={500} />
-        </div>,
-        <div className="item" data-value="1" >
-            <img src="./images/energia maremotriz.jpg" width={1490} height={500} />
-        </div>,
-        <div className="item" data-value="1" >
-            <img src="./images/energia-nuclear.jpg" width={1490} height={500} />
-        </div>,
-        <div className="item" data-value="1" >
-            <img src="./images/energiasolar.png" width={1490} height={500} />
-        </div>,
-        <div className="item" data-value="1" >
-            <img src="./images/parque-eolico.jpg" width={1490} height={500} />
-        </div>,
-        <div className="item" data-value="1" >
-            <img src="./images/energia geotermica.jpg" width={1490} height={500} />
-        </div>
-    ]
-
     return (
         <>
 
-            <div className='App'>
-                <AliceCarousel
-                    autoHeight
-                    infinite
-                    mouseTracking
-                    items={items}
-                />
-            </div>
-
             <Grid container direction="row" justifyContent="Center" alignItems="center" className='caixa' >
 
-                <Grid item xs={12} alignItems=''>
-                    <img src="./images/gph.jpg" alt="" width="1288px" height="400px" />
-                </Grid>
+                <Box display={{ xs: 'none', md: 'block' }}>
+                    <Carousel />
+                </Box>
                 <Grid xs={12} className="postagens">
                 </Grid>
                 <Grid alignItems="center" item xs={6}>

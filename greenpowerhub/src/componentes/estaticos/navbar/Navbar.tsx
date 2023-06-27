@@ -7,11 +7,11 @@ function Navbar() {
         <>
 
             <AppBar position="static" className='appbar'>
-                <Toolbar variant="dense" >
-                    <Box display="flex" justifyContent= "flex-end">
+                <Toolbar variant="dense"  style={{ height: '100%' }}>
+                    <Box display="flex" justifyContent= "space-between" alignItems='center' height='100%'>
                         <Box className='logo' >
                             <Typography variant="h5" color="inherit">
-                            <img src='https://i.imgur.com/7nCVJk1.png?2' alt="logo" referrerPolicy="no-referrer"/>
+                            <img src='./images/logoGPH1.png' alt="logo" referrerPolicy="no-referrer"  height='60px'/>
                             </Typography>
                         </Box>
 
@@ -52,6 +52,7 @@ function Navbar() {
                                     </Typography>
                                 </Box>
                             </Link>
+                            
 
                         </Box>
                     </Box>

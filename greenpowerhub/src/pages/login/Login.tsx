@@ -1,14 +1,16 @@
-import useLocalStorage from 'react-use-localstorage';
 import './Login.css';
 import { Box, Grid, TextField, Typography, Button } from "@material-ui/core";
 import { Link, useNavigate } from 'react-router-dom';
 import { ChangeEvent, useEffect, useState } from 'react';
 import UserLogin from '../../models/UserLogin';
 import { login } from '../../services/Service';
+import { useDispatch } from 'react-redux';
+import { addToken } from '../../store/tokens/Action';
 function Login() {
 
     let navigate = useNavigate();
-    const [token, setToken] = useLocalStorage('token');// faz o controle do token dentro do localStorage
+    const dispatch = useDispatch();
+    const [token, setToken] = useState('');// faz o controle do token dentro do localStorage
 
     const [userLogin, setUserLogin] = useState<UserLogin>( //userLogin é acessar informaçoes do state e o setUserLogin é para alterar
         {
@@ -30,6 +32,7 @@ function Login() {
 
     useEffect(() => {
         if (token != '') {
+            dispatch(addToken(token));
             navigate('/home')
         }
     }, [token])
@@ -57,7 +60,7 @@ function Login() {
                         <TextField value={userLogin.senha} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)} id="senha" label='senha' variant='outlined' name="senha" margin="normal" type="password" fullWidth />
                         <Box marginTop={2} textAlign='center'>
                             <Link to='/home' className='text-decorator-none'>
-                                <Button type='submit' variant='contained' style={{ borderColor: "lightgrey", backgroundColor: "#22577a", color: "lightgrey" }}>
+                                <Button type='submit' variant='contained' style={{ borderColor: "lightgrey", backgroundColor: "#22577a", color: "white" }}>
                                     Logar
                                 </Button>
                             </Link>

@@ -1,7 +1,23 @@
+import { useNavigate } from 'react-router-dom';
 import './Sobre.css';
 import { Box, Grid, Typography } from "@mui/material";
+import { useDispatch, useSelector } from 'react-redux';
+import { useEffect, useState } from 'react';
+import { TokenState } from '../../store/tokens/TokenReducer';
 
 function Sobre() {
+
+    let navigate = useNavigate();
+    const token = useSelector<TokenState, TokenState["tokens"]>(
+        (state)=> state.tokens
+    );
+
+    useEffect(() => {
+        if (token == "") {
+            alert("Você precisa estar logado")
+            navigate("/login")
+        }
+    }, [token])
     return (
         <>
             <Grid container direction="row" justifyContent="Center" alignItems="center" className='caixa1' >

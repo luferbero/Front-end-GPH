@@ -6,6 +6,7 @@ import { useSelector } from 'react-redux';
 import { useEffect } from 'react';
 import ModalPostagem from '../../componentes/postagens/modalPostagem/ModalPostagem';
 import { TokenState } from '../../store/tokens/TokenReducer';
+import TabPostagem from '../../componentes/postagens/tabpostagem/TabPostagem';
 
 
 function Home() {
@@ -47,6 +48,9 @@ function Home() {
                         <Button variant="outlined" className='botao'>Ver Postagens</Button>
                         </Link>
                     </Box>
+                </Grid>
+                <Grid xs={12} className="postagens">
+                    <TabPostagem />
                 </Grid>
             </Grid>
 

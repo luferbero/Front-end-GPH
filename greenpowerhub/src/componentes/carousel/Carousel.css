@@ -11,9 +11,10 @@
   }
   
   .swiper {
-    margin-top: 75px;
-    height: 355px;
-    margin-bottom: 75px !important;
+    margin-top: 30px;
+    height: 500px;
+    width: 1300px;
+    margin-bottom: 100px !important;
     border-radius: 1rem;
   
   }
@@ -40,7 +41,7 @@
   }
   
   .mySwiper .swiper-pagination-bullet {
-    background-color: #55A630;
+    background-color: white;
     /* substitua #ff0000 pela cor desejada */
     margin-bottom: -0.85rem !important;
   }

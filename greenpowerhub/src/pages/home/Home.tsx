@@ -6,7 +6,7 @@ import { useSelector } from 'react-redux';
 import { useEffect } from 'react';
 import ModalPostagem from '../../componentes/postagens/modalPostagem/ModalPostagem';
 import { TokenState } from '../../store/tokens/TokenReducer';
-import TabPostagem from '../../componentes/postagens/tabpostagem/TabPostagem';
+// import TabPostagem from '../../componentes/postagens/tabpostagem/TabPostagem';
 
 
 function Home() {
@@ -35,10 +35,10 @@ function Home() {
                 </Box>
                 <Grid xs={12} className="postagens">
                 </Grid>
-                <Grid alignItems="center" item xs={6}>
-                    <Box paddingX={5} >
-                        <Typography variant="h3" gutterBottom color="textPrimary" component="h3" align="center" className='titulo'>Seja bem vindo ao Green Power Hub</Typography>
-                        <Typography variant="h5" gutterBottom color="textPrimary" component="h5" align="center" className='titulo'>Compartilhe aqui seus conhecimentos!</Typography>
+                <Grid alignItems="center" item xs={12}>
+                    <Box paddingX={12} className="textoInfo">
+                        {/* <Typography variant="h5" gutterBottom color="textPrimary" component="h3" align="center" className='titulo'>Seja bem vindo ao Green Power Hub</Typography> */}
+                        <Typography variant="h5" gutterBottom color="textPrimary" component="h5" align="center" className='titulo'>Bem-vindo ao Green Power Hub, a rede social dedicada à energia limpa e renovável. Conecte-se, compartilhe informações e promova soluções sustentáveis. Junte-se a uma comunidade global empenhada em acelerar a transição para um futuro mais verde. Faça networking, encontre soluções e impulsione a mudança. Juntos, construiremos um mundo movido por energia limpa.</Typography>
                     </Box>
                     <Box display='flex' justifyContent='center'>
                         <Box marginRight={1}>
@@ -49,9 +49,9 @@ function Home() {
                         </Link>
                     </Box>
                 </Grid>
-                <Grid xs={12} className="postagens">
+                {/* <Grid xs={12} className="postagens">
                     <TabPostagem />
-                </Grid>
+                </Grid> */}
             </Grid>
 
         </>

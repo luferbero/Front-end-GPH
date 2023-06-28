@@ -5,7 +5,7 @@ interface Postagem {
     titulo: string;
     postagem:string;
     data: string;
-    comentario: string;
+    comentario: string
     tema?: Tema| null
 }
 

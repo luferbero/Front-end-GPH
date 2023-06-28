@@ -1,9 +1,10 @@
-import { AppBar, Toolbar, Typography, Box, Avatar } from '@material-ui/core';
+import { AppBar, Toolbar, Typography, Box, Avatar, SvgIcon } from '@material-ui/core';
 import { Link, useNavigate } from 'react-router-dom';
 import './Navbar.css'
 import { useDispatch, useSelector } from 'react-redux';
 import { TokenState } from '../../../store/tokens/TokenReducer';
 import { addToken } from '../../../store/tokens/Action';
+import ExitToAppIcon from '@material-ui/icons/ExitToApp';
 
 function Navbar() {
 
@@ -26,59 +27,54 @@ function Navbar() {
             <AppBar position="static" className='appbar'>
                 <Toolbar variant="dense" style={{ height: '100%' }}>
                     <Box display="flex" justifyContent="space-between" alignItems='center' height='100%'>
-                        <Box className='logo' >
-                            <Typography variant="h5" color="inherit">
-                                <img src='./images/logoGPH1.png' alt="logo" referrerPolicy="no-referrer" height='60px' />
-                            </Typography>
-                        </Box>
-
-                        <Box display="flex" >
                             <Link to='/home' className='cursor'>
                                 <Box mx={3} style={{ cursor: "pointer" }} >
-                                    <Typography variant="h6" color="inherit" >
-                                        Home
+                                    <Typography variant="h3" color="inherit" >
+                                         <img src='./images/logoGPH1.png' alt="logo" referrerPolicy="no-referrer" height='60px' />
                                     </Typography>
                                 </Box>
                             </Link>
+
+                        <Box display="flex" >
                             <Link to='/posts' className='cursor'>
                                 <Box mx={2} style={{ cursor: "pointer", }}>
-                                    <Typography variant="h6" color="inherit">
+                                    <Typography variant="h5" color="inherit">
                                         Postagens
                                     </Typography>
                                 </Box>
                             </Link>
                             <Link to="/temas" className="text-decorator-none">
                                 <Box mx={1} className='cursor'>
-                                    <Typography variant="h6" color="inherit">
+                                    <Typography variant="h5" color="inherit">
                                         Temas
                                     </Typography>
                                 </Box>
                             </Link>
                             <Link to="/formularioTema" className="text-decorator-none">
                                 <Box mx={1} className='cursor'>
-                                    <Typography variant="h6" color="inherit">
+                                    <Typography variant="h5" color="inherit">
                                         Cadastrar Tema
                                     </Typography>
                                 </Box>
                             </Link>
                             <Link to='/sobre' className='cursor'>
                                 <Box mx={2} style={{ cursor: "pointer" }}>
-                                    <Typography variant="h6" color="inherit">
+                                    <Typography variant="h5" color="inherit">
                                         Sobre
                                     </Typography>
                                 </Box>
                             </Link>
                             <Link to='/contato' className='cursor'>
                                 <Box mx={2} style={{ cursor: "pointer" }}>
-                                    <Typography variant="h6" color="inherit">
+                                    <Typography variant="h5" color="inherit">
                                         Contato
                                     </Typography>
                                 </Box>
                             </Link>
 
-                            <Box mx={2} style={{ cursor: "pointer" }} onClick={goLogout} >
-                                <Typography variant="h6" color="inherit">
-                                    Logout
+                            <Box mx={2} style={{ cursor: "pointer" }} onClick={goLogout} className="logout">
+                                <Typography variant="h5" color="inherit">
+                                <SvgIcon component={ExitToAppIcon} viewBox="lightgrey"/>
                                 </Typography>
                             </Box>
 

@@ -117,7 +117,6 @@ function CadastroPost() {
                 <Typography variant="h3" color="textSecondary" component="h1" align="center" >Formulário de cadastro postagem</Typography>
                 <TextField value={postagem.titulo} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedPostagem(e)} id="titulo" label="titulo" variant="outlined" name="titulo" margin="normal" fullWidth />
                 <TextField value={postagem.postagem} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedPostagem(e)} id="postagem" label="postagem" name="postagem" variant="outlined" margin="normal" fullWidth />
-                <TextField value={postagem.data} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedPostagem(e)} id="data" label="data" name="data" variant="outlined" margin="normal" fullWidth />
                 <TextField value={postagem.comentario} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedPostagem(e)} id="comentario" label="comentario" name="comentario" variant="outlined" margin="normal" fullWidth />
 
                 <FormControl >

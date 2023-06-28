@@ -10,10 +10,10 @@ function Footer() {
            <Grid container direction="row" justifyContent="center" alignItems="center">
             <Grid alignItems="center" item xs={12}>
 
-                <Box className='backFooter' marginTop='-5px'>
+                <Box className='backFooter' marginTop='0px'>
 
                     <Box display="flex" alignItems="center" justifyContent="center" >
-                        <a href="https://www.instagram.com/greenpowerhub23/" target="_blank">
+                        <a href="https://www.instagram.com/greenpowerhub23/" target="_blank" >
                             <InstagramIcon className='redes' />
                         </a>
                         <a href="https://github.com/orgs/Projeto-Integrador-Generation/repositories" target="_blank">

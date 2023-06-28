@@ -40,7 +40,7 @@ function Home() {
                         {/* <Typography variant="h5" gutterBottom color="textPrimary" component="h3" align="center" className='titulo'>Seja bem vindo ao Green Power Hub</Typography> */}
                         <Typography variant="h5" gutterBottom color="textPrimary" component="h5" align="center" className='titulo'>Bem-vindo ao Green Power Hub, a rede social dedicada à energia limpa e renovável. Conecte-se, compartilhe informações e promova soluções sustentáveis. Junte-se a uma comunidade global empenhada em acelerar a transição para um futuro mais verde. Faça networking, encontre soluções e impulsione a mudança. Juntos, construiremos um mundo movido por energia limpa.</Typography>
                     </Box>
-                    <Box display='flex' justifyContent='center'>
+                    <Box display='flex' justifyContent= 'space-evenly'>
                         <Box marginRight={1}>
                         <ModalPostagem/>
                         </Box>

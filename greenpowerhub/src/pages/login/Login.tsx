@@ -15,7 +15,7 @@ function Login() {
 
     const [userLogin, setUserLogin] = useState<UserLogin>( //userLogin é acessar informaçoes do state e o setUserLogin é para alterar
         {
-            id:0,
+            id: 0,
             usuario: '',
             senha: '',
             token: ''
@@ -41,7 +41,7 @@ function Login() {
     async function onSubmit(e: ChangeEvent<HTMLFormElement>) { //faz o envio das informaçoes da autenticação do usuário
         e.preventDefault();
         try {
-           await login(`/usuarios/logar`, userLogin,setToken)
+            await login(`/usuarios/logar`, userLogin, setToken)
 
             alert('Usuário logado com sucesso!');
         } catch (error) {
@@ -52,34 +52,32 @@ function Login() {
     }
 
     return (
-        <Grid container direction="row" justifyContent="center" alignItems="center">
+
+        <Grid container direction="row" justifyContent="center" alignItems="center" className="imagem">
             <Grid alignItems="center" xs={6}>
                 <Box paddingX={20}>
-                    <form onSubmit={onSubmit}>
+                    <form onSubmit={onSubmit} className="fundoForm">
                         <Typography variant='h3' gutterBottom color='textPrimary' component='h3' align="center" className="textos">Entrar</Typography>
                         <TextField value={userLogin.usuario} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)} id="usuario" label='usuario' variant='outlined' name="usuario" margin="normal" fullWidth />
                         <TextField value={userLogin.senha} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)} id="senha" label='senha' variant='outlined' name="senha" margin="normal" type="password" fullWidth />
                         <Box marginTop={2} textAlign='center'>
-                                <Button type='submit' variant='contained' style={{ borderColor: "lightgrey", backgroundColor: "#22577a", color: "white" }}>
-                                    Logar
-                                </Button>
+                            <Button type='submit' variant='contained' style={{ borderColor: "lightgrey", backgroundColor: "#22577a", color: "white" }}>
+                                Logar
+                            </Button>
+                        </Box>
+                        <Box display='flex' justifyContent='center' marginTop={3}>
+                            <Box marginRight={1}>
+                                <Typography variant='subtitle1' gutterBottom align="center">Não tem uma conta?</Typography>
+                            </Box>
+                            <Link to="/cadastroUsuario">
+                                <Typography variant='subtitle1' gutterBottom align="center" className="textos">Cadastre-se</Typography>
+                            </Link>
                         </Box>
                     </form>
-                    <Box display='flex' justifyContent='center' marginTop={2}>
-                        <Box marginRight={1}>
-                            <Typography variant='subtitle1' gutterBottom align="center">Não tem uma conta?</Typography>
-                        </Box>
-                        <Link to="/cadastroUsuario">
-                        <Typography variant='subtitle1' gutterBottom align="center" className="textos">Cadastre-se</Typography>
-                        </Link>
-                    </Box>
                 </Box>
             </Grid>
-            <Grid xs={6} className="imagem">
-
-
-            </Grid>
         </Grid>
+
     )
 }
 

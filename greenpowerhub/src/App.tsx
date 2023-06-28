@@ -6,7 +6,6 @@ import CadastroUsuario from './pages/cadastroUsuario/CadastroUsuario';
 import Login from './pages/login/Login';
 import Sobre from './pages/sobre/Sobre';
 import Contato from './pages/contato/Contato';
-
 import './App.css'
 import { Provider } from 'react-redux';
 import store from './store/Store';
@@ -24,7 +23,7 @@ function App() {
     <Provider store={store}>
     <Router>
       <Navbar />
-      <div style={{ minHeight: '50vh' }}>
+      <div style={{ minHeight: '100vh' }}>
         <Routes>
 
           <Route path="/" element={<Login />} />

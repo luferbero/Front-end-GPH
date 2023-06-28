@@ -40,7 +40,7 @@ function Navbar() {
                                     </Typography>
                                 </Box>
                             </Link>
-                            <Link to='/postagens' className='cursor'>
+                            <Link to='/posts' className='cursor'>
                                 <Box mx={2} style={{ cursor: "pointer", }}>
                                     <Typography variant="h6" color="inherit">
                                         Postagens

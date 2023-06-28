@@ -3,7 +3,6 @@ import { Card, CardActions, CardContent, Button, Typography } from '@material-ui
 import { Box } from '@mui/material';
 // import './DeletarTema.css';
 import { useNavigate, useParams } from 'react-router-dom';
-import useLocalStorage from 'react-use-localstorage';
 import { buscaId, deleteId } from '../../../services/Service';
 import Tema from '../../../models/Tema';
 import { useSelector } from 'react-redux';
@@ -38,17 +37,17 @@ function DeletarTema() {
     })
   }
 
-  function sim(){
+  function sim() {
     navigate("/temas")
     deleteId(`/temas/${id}`, {
-      headers:{
-      'Authorization': token
+      headers: {
+        'Authorization': token
       }
     });
     alert('Tema deletado com sucesso');
   }
 
-  function nao(){
+  function nao() {
     navigate('/temas')
   }
 

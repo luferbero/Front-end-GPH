@@ -6,6 +6,7 @@ import UserLogin from '../../models/UserLogin';
 import { login } from '../../services/Service';
 import { useDispatch } from 'react-redux';
 import { addToken } from '../../store/tokens/Action';
+
 function Login() {
 
     let navigate = useNavigate();
@@ -15,7 +16,7 @@ function Login() {
     const [userLogin, setUserLogin] = useState<UserLogin>( //userLogin é acessar informaçoes do state e o setUserLogin é para alterar
         {
             id:0,
-            usuario: "",
+            usuario: '',
             senha: '',
             token: ''
             //são os valores iniciais do state
@@ -59,11 +60,9 @@ function Login() {
                         <TextField value={userLogin.usuario} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)} id="usuario" label='usuario' variant='outlined' name="usuario" margin="normal" fullWidth />
                         <TextField value={userLogin.senha} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)} id="senha" label='senha' variant='outlined' name="senha" margin="normal" type="password" fullWidth />
                         <Box marginTop={2} textAlign='center'>
-                            <Link to='/home' className='text-decorator-none'>
                                 <Button type='submit' variant='contained' style={{ borderColor: "lightgrey", backgroundColor: "#22577a", color: "white" }}>
                                     Logar
                                 </Button>
-                            </Link>
                         </Box>
                     </form>
                     <Box display='flex' justifyContent='center' marginTop={2}>

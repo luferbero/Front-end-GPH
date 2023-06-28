@@ -8,14 +8,14 @@ import './TabPostagem.css';
 
 function TabPostagem() {
     const [value, setValue] = useState('1')
-    function handleChange(event: React.ChangeEvent<{}>, newValue: string){
+    function handleChange(e: React.ChangeEvent<{}>, newValue: string){
         setValue(newValue);
     }
   return (
     <>
       <TabContext value={value}>
         <AppBar position="static">
-          <Tabs centered style={{color:"white", backgroundColor:'#941b0cff'}} onChange={handleChange}>
+          <Tabs centered style={{color:"white", backgroundColor:'#000000'}} onChange={handleChange}>
             <Tab label="Todas as postagens" value="1"/>
             <Tab label="Sobre-nós" value="2" />
           </Tabs>

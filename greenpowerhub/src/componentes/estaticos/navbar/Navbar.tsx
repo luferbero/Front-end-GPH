@@ -47,6 +47,20 @@ function Navbar() {
                                     </Typography>
                                 </Box>
                             </Link>
+                            <Link to="/temas" className="text-decorator-none">
+                                <Box mx={1} className='cursor'>
+                                    <Typography variant="h6" color="inherit">
+                                        Temas
+                                    </Typography>
+                                </Box>
+                            </Link>
+                            <Link to="/formularioTema" className="text-decorator-none">
+                                <Box mx={1} className='cursor'>
+                                    <Typography variant="h6" color="inherit">
+                                        Cadastrar Tema
+                                    </Typography>
+                                </Box>
+                            </Link>
                             <Link to='/sobre' className='cursor'>
                                 <Box mx={2} style={{ cursor: "pointer" }}>
                                     <Typography variant="h6" color="inherit">
@@ -62,13 +76,12 @@ function Navbar() {
                                 </Box>
                             </Link>
 
-                            <Link to='/login' className='cursor'>
-                                <Box mx={2} style={{ cursor: "pointer" }} >
-                                    <Typography variant="h6" color="inherit">
-                                        Logout
-                                    </Typography>
-                                </Box>
-                            </Link>
+                            <Box mx={2} style={{ cursor: "pointer" }} onClick={goLogout} >
+                                <Typography variant="h6" color="inherit">
+                                    Logout
+                                </Typography>
+                            </Box>
+
 
 
                         </Box>
@@ -79,11 +92,11 @@ function Navbar() {
 
     }
 
-        return (
-            <>
-                {navbarComponent}
-            </>
-        )
-    }
+    return (
+        <>
+            {navbarComponent}
+        </>
+    )
+}
 
-    export default Navbar;
+export default Navbar;

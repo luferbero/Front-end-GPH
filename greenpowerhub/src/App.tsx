@@ -24,7 +24,7 @@ function App() {
     <Provider store={store}>
     <Router>
       <Navbar />
-      <div style={{ minHeight: '70vh' }}>
+      <div style={{ minHeight: '50vh' }}>
         <Routes>
 
           <Route path="/" element={<Login />} />

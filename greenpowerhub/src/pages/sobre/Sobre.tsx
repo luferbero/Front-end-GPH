@@ -5,6 +5,7 @@ import { Box, Typography} from "@mui/material";
 import { useDispatch, useSelector } from 'react-redux';
 import { useEffect, useState } from 'react';
 import { TokenState } from '../../store/tokens/TokenReducer';
+import { toast } from 'react-toastify';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
 
@@ -18,7 +19,16 @@ function Sobre() {
 
     useEffect(() => {
         if (token == "") {
-            alert("Você precisa estar logado")
+            toast.error('Você precisa estar logado', {
+                position: "top-right",
+                autoClose: 3000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: false,
+                draggable: false,
+                progress: undefined,
+                theme: "colored",
+            });
             navigate("/login")
         }
     }, [token])

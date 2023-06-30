@@ -79,15 +79,15 @@ function ListaPostagem() {
 
                   <Link to={`/formularioPostagem/${post.id}`} className="text-decorator-none" >
                     <Box mx={1}>
-                      <Button variant="contained" className="marginLeft" size='small' color="primary" >
-                        atualizar
+                      <Button variant="contained" className="marginLeft" size='small' style={{ borderColor: "lightgrey", backgroundColor: "#1a759fff", color: "lightgrey" }}>
+                        Atualizar
                       </Button>
                     </Box>
                   </Link>
-                  <Link to={`/deletarPostagem/${post.id}`} className="text-decorator-none">
+                  <Link to={`/deletarPostagem/${post.id}`} className="text-decorator-none" >
                     <Box mx={1}>
                       <Button variant="contained" size='small' color="secondary">
-                        deletar
+                        Deletar
                       </Button>
                     </Box>
                   </Link>

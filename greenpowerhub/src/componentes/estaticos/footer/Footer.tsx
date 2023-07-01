@@ -13,11 +13,11 @@ function Footer() {
                 <Box className='backFooter' marginTop='0px'>
 
                     <Box display="flex" alignItems="center" justifyContent="center" >
-                        <a href="https://www.instagram.com/greenpowerhub23/" target="_blank" >
-                            <InstagramIcon className='redes' />
+                        <a href="https://www.instagram.com/greenpowerhub23/" target="_blank" className="redes" >
+                            <InstagramIcon style={{ padding: '0px', fontSize: '50px' }} />
                         </a>
-                        <a href="https://github.com/orgs/Projeto-Integrador-Generation/repositories" target="_blank">
-                            <GitHubIcon className='redes' />
+                        <a href="https://github.com/orgs/Projeto-Integrador-Generation/repositories" target="_blank" className="redes">
+                            <GitHubIcon style={{ fontSize: '50px' }}/>
                         </a>
                     </Box>
                     <Box className="box2">

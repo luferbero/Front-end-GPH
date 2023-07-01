@@ -24,10 +24,16 @@
 
 .fotosDev{
 
-    
+    border-color: antiquewhite;
     border-style: double;
     justify-content: center;
     border-radius: 50%;
+}
+
+.devscard{
+
+    text-align: center;
+
 }
 
 .titulo{
@@ -35,3 +41,14 @@
     font-family: 'Bacasime Antique'
 }
 
+.texto{
+
+    text-align: center;
+}
+
+hr{
+
+    border: 0;
+  height: 2px;
+  background-image: linear-gradient(to right, transparent, #CCC, transparent);  
+}

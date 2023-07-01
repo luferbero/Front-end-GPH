@@ -7,12 +7,13 @@ function Footer() {
 
     return (
         <>
-           <Grid container direction="row" justifyContent="center" alignItems="center">
+           <Grid container direction="row" justifyContent="center" alignItems="center"><hr></hr>
             <Grid alignItems="center" item xs={12}>
 
                 <Box className='backFooter' marginTop='0px'>
 
-                    <Box display="flex" alignItems="center" justifyContent="center" >
+                
+                        <Box display="flex" alignItems="center" justifyContent="center" >
                         <a href="https://www.instagram.com/greenpowerhub23/" target="_blank" className="redes" >
                             <InstagramIcon style={{ padding: '0px', fontSize: '50px' }} />
                         </a>
@@ -32,6 +33,7 @@ function Footer() {
 
             </Grid>
         </Grid> 
+        
         </>
     )
 }

@@ -97,7 +97,7 @@ function Sobre() {
                     <Box paddingX={5} textAlign={'center'}>
                         <img src="./images/Bruno.jpg" className="fotosDev" width="120px" height="120px" referrerPolicy="no-referrer" />
                         <Typography variant="h6" gutterBottom color="white" align="center" className="nomeDev">Bruno Ferreira</Typography>
-                        <Typography variant="body1" gutterBottom color="white"  align="center" className="subtituloSobre">Dev Full Stack</Typography><hr></hr>
+                        <Typography variant="body1" gutterBottom color="white" align="center" className="subtituloSobre">Dev Full Stack</Typography>
                         <Typography variant="body2" gutterBottom color="white" component="h3" align="center" className='devscard' id="devsFila1">Realizando formação em Banco de dados e Jogos digitais e recém formada na Generation. Convido você a explorar meu trabalho e conhecer um pouco mais sobre minha trajetória profissional.  </Typography>
 
                         <Box display="flex" alignItems="center" justifyContent="center">
@@ -115,7 +115,7 @@ function Sobre() {
                     <Box paddingX={5} textAlign={'center'}>
                         <img src="./images/alessandra.jpg" className="fotosDev" width="120px" height="120px" referrerPolicy="no-referrer" />
                         <Typography variant="h6" className="nomeDev" gutterBottom color="white" align="center">Alessandra Mariana</Typography>
-                        <Typography variant="body1" gutterBottom color="white" align="center" className="subtituloSobre">Dev Full Stack</Typography><hr></hr>
+                        <Typography variant="body1" gutterBottom color="white" align="center" className="subtituloSobre">Dev Full Stack</Typography>
                         <Typography variant="body2" gutterBottom color="white" align="center" className='devscard' id="devsFila1">Realizando formação em Banco de dados e Jogos digitais e recém formada na Generation. Convido você a explorar meu trabalho e conhecer um pouco mais sobre minha trajetória profissional. </Typography>
 
                         <Box display="flex" alignItems="center" justifyContent="center">
@@ -132,8 +132,8 @@ function Sobre() {
                 <Grid item md={4}>
                     <Box paddingX={5} textAlign={'center'}>
                         <img src="./images/Luiz.jpg" className="fotosDev" width="120px" height="120px" referrerPolicy="no-referrer" />
-                        <Typography variant="h6" className="nomeDev" gutterBottom color="white"  align="center">Luiz Rodrigues</Typography>
-                        <Typography variant="body1" gutterBottom color="white" align="center" className="subtituloSobre">Dev Full Stack</Typography><hr></hr>
+                        <Typography variant="h6" className="nomeDev" gutterBottom color="white" align="center">Luiz Rodrigues</Typography>
+                        <Typography variant="body1" gutterBottom color="white" align="center" className="subtituloSobre">Dev Full Stack</Typography>
                         <Typography variant="body2" gutterBottom color="white" align="center" className='devscard' id="devsFila1">Realizando formação em Banco de dados e Jogos digitais e recém formada na Generation. Convido você a explorar meu trabalho e conhecer um pouco mais sobre minha trajetória profissional. </Typography>
 
                         <Box display="flex" alignItems="center" justifyContent="center">
@@ -151,7 +151,7 @@ function Sobre() {
                     <Box paddingX={5} textAlign={'center'}>
                         <img src="./images/Thayna.jpg" className="fotosDev" width="120px" height="120px" referrerPolicy="no-referrer" />
                         <Typography variant="h6" className="nomeDev" gutterBottom color="white" align="center" >Thayna de A.</Typography>
-                        <Typography variant="body1" gutterBottom color="white" align="center" className="subtituloSobre">Dev Full Stack</Typography><hr></hr>
+                        <Typography variant="body1" gutterBottom color="white" align="center" className="subtituloSobre">Dev Full Stack</Typography>
                         <Typography variant="body2" gutterBottom color="white" align="center" className='devscard' id="devsFila1">Realizando formação em Banco de dados e Jogos digitais e recém formada na Generation. Convido você a explorar meu trabalho e conhecer um pouco mais sobre minha trajetória profissional. </Typography>
 
                         <Box display="flex" alignItems="center" justifyContent="center" >
@@ -173,7 +173,7 @@ function Sobre() {
                     <Box paddingX={5} textAlign={'center'}>
                         <img src="./images/Ricardo.jpg" className="fotosDev" width="120px" height="120px" referrerPolicy="no-referrer" />
                         <Typography variant="h6" className="nomeDev" gutterBottom color="white" align="center" >Ricardo Marinho</Typography>
-                        <Typography variant="body1" gutterBottom color="white"  align="center" className="subtituloSobre">Dev Full Stack</Typography><hr></hr>
+                        <Typography variant="body1" gutterBottom color="white" align="center" className="subtituloSobre">Dev Full Stack</Typography>
                         <Typography variant="body2" gutterBottom color="white" align="center" className='devscard'>Realizando formação em Banco de dados e Jogos digitais e recém formada na Generation. Convido você a explorar meu trabalho e conhecer um pouco mais sobre minha trajetória profissional. </Typography>
 
                         <Box display="flex" alignItems="center" justifyContent="center">
@@ -190,8 +190,8 @@ function Sobre() {
                 <Grid item md={4}>
                     <Box paddingX={5} textAlign={'center'}>
                         <img src="./images/Alanis.jpg" className="fotosDev" width="120px" height="120px" referrerPolicy="no-referrer" />
-                        <Typography variant="h6" className="nomeDev" gutterBottom color="white"  align="center">Alanis Mayra</Typography>
-                        <Typography variant="body1" gutterBottom color="white" align="center" className="subtituloSobre" >Dev Full Stack</Typography><hr></hr>
+                        <Typography variant="h6" className="nomeDev" gutterBottom color="white" align="center">Alanis Mayra</Typography>
+                        <Typography variant="body1" gutterBottom color="white" align="center" className="subtituloSobre" >Dev Full Stack</Typography>
                         <Typography variant="body2" gutterBottom color="white" align="center" className='devscard'>Realizando formação em Banco de dados e Jogos digitais e recém formada na Generation. Convido você a explorar meu trabalho e conhecer um pouco mais sobre minha trajetória profissional. </Typography>
 
                         <Box display="flex" alignItems="center" justifyContent="center">
@@ -207,10 +207,9 @@ function Sobre() {
                 <Grid item md={12}>
                     <Box paddingX={12} textAlign={'center'}>
                         <Typography variant='h4' align="center" color={'white'} > Siga nossas redes e acompanhe nosso trabalho!</Typography><hr></hr>
-                        
                     </Box>
                 </Grid>
-                
+
             </Grid>
 
         </>

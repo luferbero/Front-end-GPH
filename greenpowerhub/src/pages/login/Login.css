@@ -20,6 +20,7 @@
     backdrop-filter: blur(20px);
     border-radius: 5%;
     box-shadow: 0 0 70px;
+    
 }
 
 .textos{
@@ -41,3 +42,4 @@
     color: #1a759fff  !important;
     
 }
+

@@ -5,7 +5,7 @@
 } */
     
 .caixa{
-    background-color: #FFFCEE;
+    background-color: rgb(220, 235, 235) !important;
  
  }
  
@@ -29,7 +29,7 @@
      border-radius: 2rem !important;
  }
  .postagens{
-     background-color:#E9DDC3;
+    background-color: rgb(220, 235, 235);
      
  }
 

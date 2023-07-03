@@ -82,7 +82,7 @@ function Navbar() {
                                 </Box>
                             </Link>
 
-                            <Box mx={2} style={{ cursor: "pointer" }} onClick={goLogout} className="logout">
+                            <Box mx={2} style={{ cursor: "pointer" }} onClick={goLogout} className="logout" >
                                 <Typography variant="h5" color="inherit">
                                 <SvgIcon component={ExitToAppIcon} viewBox="lightgrey"/>
                                 </Typography>

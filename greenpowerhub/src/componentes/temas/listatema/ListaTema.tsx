@@ -51,7 +51,7 @@ function ListaTema() {
     {
       temas.map(tema =>(
       <Box m={2} >
-        <Card variant="outlined">
+        <Card variant="outlined" className="corTemas">
           <CardContent>
             <Typography color="textSecondary" gutterBottom>
               Tema
@@ -68,7 +68,7 @@ function ListaTema() {
 
               <Link to={`/formularioTema/${tema.id}`} className="text-decorator-none">
                 <Box mx={1}>
-                  <Button variant="contained" className="marginLeft" size='small' style={{ borderColor: "lightgrey", backgroundColor: "#1a759fff", color: "lightgrey" }} >
+                  <Button variant="contained" className="marginLeft" size='small' style={{ borderColor: "lightgrey", backgroundColor: "#1a759fff", color: "white" }} >
                     Atualizar
                   </Button>
                 </Box>

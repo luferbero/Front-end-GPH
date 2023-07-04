@@ -6,7 +6,7 @@ import { TokenState } from '../../../store/tokens/TokenReducer';
 import { addToken } from '../../../store/tokens/Action';
 import {toast} from 'react-toastify';
 import ExitToAppIcon from '@material-ui/icons/ExitToApp';
-import imgLogo from '../../../../images/logoGPH1.png';
+import imgLogo from '../../../assets/images/logoGPH1.png';
 
 function Navbar() {
 

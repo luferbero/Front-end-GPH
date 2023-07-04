@@ -8,15 +8,15 @@ import { useEffect, useState } from 'react';
 import { TokenState } from '../../store/tokens/TokenReducer';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
-import imgAlanis from '../../../images/Alanis.jpg';
-import imgAle from '../../../images/alessandra.jpg';
-import imgBruno from '../../../images/Bruno.jpg';
-import imgLuiz from '../../../images/Luiz.jpg';
-import imgRick from '../../../images/Ricardo.jpg';
-import imgThayna from '../../../images/Thayna.jpg';
-import imgCoracao from '../../../images/coracao.png';
-import imgSol from '../../../images/sol.png';
-import imgSolo from '../../../images/solo.png';
+import imgAlanis from '../../assets/images/Alanis.jpg';
+import imgAle from '../../assets/images/alessandra.jpg';
+import imgBruno from '../../assets/images/images/Bruno.jpg';
+import imgLuiz from '../../assets/images/Luiz.jpg';
+import imgRick from '../../assets/images/Ricardo.jpg';
+import imgThayna from '../../assets/images/Thayna.jpg';
+import imgCoracao from '../../assets/images/coracao.png';
+import imgSol from '../../assets/images/sol.png';
+import imgSolo from '../../assets/images/solo.png';
 
 
 function Sobre() {

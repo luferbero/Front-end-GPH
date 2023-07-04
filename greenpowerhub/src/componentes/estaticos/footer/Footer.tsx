@@ -1,6 +1,6 @@
 import { Box, Typography, Grid } from "@material-ui/core";
 import InstagramIcon from "@material-ui/icons/Instagram";
-import GitHubIcon from "@material-ui/icons/Github";
+import GitHubIcon from "@material-ui/icons/GitHub";
 import './Footer.css'
 
 function Footer() {     

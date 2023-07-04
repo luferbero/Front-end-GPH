@@ -34,7 +34,7 @@ function Navbar() {
 
     if (token != "") {
         navbarComponent =
-            <AppBar position="static" className='appbar'>
+            <AppBar position="fixed" className='appbar'>
                 <Toolbar variant="dense" style={{ height: '100%' }}>
                     <Box display="flex" justifyContent="space-between" alignItems='center' height='100%'>
                             <Link to='/home' className='cursor'>

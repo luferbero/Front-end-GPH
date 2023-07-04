@@ -24,7 +24,7 @@ function Contato() {
         <>
             <Grid container direction='row' justifyContent='center' alignItems='center' className='text_form' >
                 <Grid sm={6}>
-                    <Box marginLeft="80px" marginTop="50px" alignItems="center" className='fundoCtt' marginRight="30px" textAlign="center">
+                    <Box marginLeft="80px" marginTop="90px" alignItems="center" className='fundoCtt' marginRight="30px" textAlign="center">
 
                         <Typography variant='h3' fontWeight="bold" style={{ color: "white" }} >Informações de contato</Typography>
                         <Box my={2}></Box>
@@ -44,7 +44,7 @@ function Contato() {
                     </Box>
                 </Grid>
                 <Grid sm={6} >
-                    <Box marginLeft="90px" marginTop="50px" alignItems="center" className='fundoCtt' marginRight="60px" textAlign="center" height="565px">
+                    <Box marginLeft="90px" marginTop="90px" alignItems="center" className='fundoCtt' marginRight="60px" textAlign="center" height="565px"  >
 
                         <Typography variant='h3' fontWeight="bold" style={{ color: "white" }}>Entre em contato</Typography>
                         <main className="contato">

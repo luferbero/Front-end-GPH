@@ -1,5 +1,5 @@
 import './Contato.css'
-import { Box, Button, Grid, Typography, TextField, Snackbar } from "@mui/material";
+import { Box, Button, Grid, Typography, TextField, Snackbar, Alert } from "@mui/material";
 import React, { useState } from "react";
 import "./Contato.css"
 
@@ -50,7 +50,7 @@ function Contato() {
                         <main className="contato">
                             <form className="formulario" >
                                 <TextField
-                                    className="texto_form"
+                                    className="text_form"
                                     id="nome"
                                     type="text"
                                     label="Nome"
@@ -93,7 +93,7 @@ function Contato() {
                                     />
                                 </Box>
                                 <Box textAlign='center' my={2}>
-                                    <Button variant='contained' style={{backgroundColor:" #184e77ff",color:"white"}} type='submit' onClick={handleEnviar}>Enviar</Button>
+                                    <Button variant='contained' style={{backgroundColor:" #184e77ff",color:"white"}} type='reset' onClick={handleEnviar}>Enviar</Button>
                                 </Box>
                             </form>
                         </main>
@@ -104,10 +104,13 @@ function Contato() {
             <Snackbar
                 open={enviado}
                 autoHideDuration={3000}
-                onClose={handleFecharSnackbar}
-                message="Mensagem enviada com sucesso!"
-
-            />
+                onClose={handleFecharSnackbar}>
+                
+                <Alert onClick={handleEnviar} severity="success" sx={{ width: '100%' }} >
+                Mensagem enviada com sucesso!
+              </Alert>
+           </Snackbar>
+           
         </>
     )
 }
